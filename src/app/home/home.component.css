@@ -1,3 +1,5 @@
 .app-top-bckg{
-    background:url('/assets/img/bckg.jpg')
+    background:url('/assets/img/bckg.jpg');
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
