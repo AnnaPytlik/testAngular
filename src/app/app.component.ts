@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnimateComponent } from './animate/animate.component';
 import { HomeComponent } from './home/home.component';
 
 @Component({

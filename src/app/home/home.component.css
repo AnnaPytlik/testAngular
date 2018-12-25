@@ -3,3 +3,20 @@
     padding-top: 5%;
     padding-bottom: 5%;
 }
+.myblock{
+    backgorundColor:green;
+    width:300px;
+    height:200px;
+    margin:5rem;
+}
+
+.view,.main-text{height:250px ;}
+@-webkit-keyframes bulb {
+    from {top: 0px; background-color: yellow;}
+    to {top: 200px; background-color: blue;}
+  }
+  
+  @keyframes bulb {
+    from {top: 0px; background-color: yellow;}
+    to {top: 200px; background-color: blue;}
+  }
