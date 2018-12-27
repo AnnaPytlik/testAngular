@@ -1,11 +1,11 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {trigger,state,style,animate,transition,keyframes} from '@angular/animations';
 
 
 @Component({
-  selector: 'app-top',
-  templateUrl: './home.component.html',
-  styleUrls: ['home.component.scss'],
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['main.component.scss'],
   animations: [
     trigger('animateState', [
         state('active', style({
@@ -14,7 +14,7 @@ import {trigger,state,style,animate,transition,keyframes} from '@angular/animati
         
         transition('* => *', animate(4000))
     ]),
- 
+
     trigger('txt1', [
       state('active', style({
           width: 250
@@ -24,7 +24,7 @@ import {trigger,state,style,animate,transition,keyframes} from '@angular/animati
   ])
 ] 
 })
-export class HomeComponent  implements OnInit {
+export class MainComponent  implements OnInit {
 
 
 

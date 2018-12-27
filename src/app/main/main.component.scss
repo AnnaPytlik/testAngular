@@ -1,0 +1,22 @@
+.app-top-bckg{
+    background:url('/assets/img/bckg.jpg');
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.myblock{
+    background-color:green;
+    width:300px;
+    height:200px;
+    margin:5rem;
+}
+
+.view,.main-text{height:250px ;}
+.square{
+    width:200px;height: 200px;border:1px solid black;
+}
+.divider-break{
+    background:#fff;
+    height: 3px;
+}
