@@ -18,10 +18,12 @@
   <div class="container-fluid">
     <div  class="row text-center text-white">
       <div class="col-sm-8 p-0 main-box main-box1  animated slideInLeft">
+          
+
         <div class="view overlay bg-secondary">
           <div class="main-text d-flex justify-content-center flex-column">
-            <h2>Porfolio</h2>
-            <p>Zobacz co możemy dla Ciebie zrobić</p>
+                  <h2> <fa-icon [icon]="faFolderOpen"></fa-icon> Porfolio</h2>
+                    <p>Zobacz co możemy dla Ciebie zrobić</p>
           </div>
           <div class="mask flex-center rgba-green-strong">
               <p class="white-text">Now</p>
@@ -55,7 +57,8 @@
       <div class="col-sm-4 p-0 main-box main-box2 animated slideInUp">
         <div class="view overlay yellow darken-1 ">
           <div class="main-text d-flex justify-content-center flex-column">
-            <h2>O mnie</h2>
+            <h2><fa-icon [icon]='faPersonBooth'></fa-icon>
+              O mnie</h2>
             <p>Troche detali</p>
           </div>
           <div class="mask flex-center rgba-pink-strong">
@@ -66,7 +69,8 @@
       <div class="col-sm-4 p-0 main-box main-box2  animated slideInLeft">
         <div class="view overlay pink darken-4">
           <div class="main-text d-flex justify-content-center flex-column ">
-            <h2>Kontakt</h2>
+            <h2><fa-icon [icon]='faFileSignature'> </fa-icon>
+              Kontakt</h2>
             <p>Odpowiem na każde pytanie</p>
           </div>
           <div class="mask flex-center rgba-green-strong">
@@ -79,8 +83,51 @@
   <div class="container-fluid">
     <div class="divider-break"></div>
   </div>
-  <div class="container-fluid">
-    <div class="row"></div>
+  <div class="container-fluid contact-form">
+    <div class="row">
+      <div class="col-sm bg bg-left">
+       
+        <form class="text-center border border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <p class="h4 mb-4">Contact us</p>
+          <!-- Name -->
+           <div class="md-form">
+              <input type="text" formControlName="contactFormName" id="fName" mdbInputDirective
+              class="form-control mb-4">
+              <label for="fName">Name</label>
+            </div> 
+          <!-- Email -->
+          <div class="md-form">
+            <input type="email" formControlName="contactFormEmail" id="fEmail" mdbInputDirective
+            class="form-control mb-4" >
+            <label for="fEmail">Email</label>
+          </div>
+
+         
+          <!-- Message -->
+          <div class="md-form">
+            <textarea formControlName="contactFormMessage" class="md-textarea form-control " mdbInputDirective id="fMessage"></textarea>
+              <label for="fMessage">Message</label>
+          </div>
+
+          <!-- Copy -->
+          <div class="form-check">
+            <input  formControlName="contactFormCopy" type="checkbox" class="form-check-input" id="fSend">
+            <label class="form-check-label" for="fSend">Send me a copy of this message</label><br><br>
+        </div>
+         
+
+
+          <!-- Send button -->
+          <div class="text-center">
+                      <button mdbBtn color="info" outline="true" block="true" class="btn btn-blue-grey waves-effect waves-light"
+            mdbWavesEffect type="submit" [disabled]="disabledSubmitButton">Send</button>
+          </div>
+
+
+        </form>
+      </div>
+      <div class="col-sm bg bg-right"></div>
+    </div>
   </div>
 
   

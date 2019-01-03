@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {trigger,state,style,animate,transition,keyframes} from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
+ 
 
+  
   constructor() { }
 
   ngOnInit() {

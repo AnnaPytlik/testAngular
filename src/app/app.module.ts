@@ -8,12 +8,14 @@ import { HomeComponent } from './home/home.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { TrocheOMnieComponent } from './troche-o-mnie/troche-o-mnie.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
-import { ReactiveFormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'; 
 import { HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -27,9 +29,11 @@ import { HttpClientModule} from '@angular/common/http';
     ChartsModule,
     HttpClientModule,
     AngularFontAwesomeModule,
+    FontAwesomeModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
